@@ -26,7 +26,7 @@ const HeroSection = () => {
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Find the Best Talent with{' '}
-              <span className="text-blue-600 bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+              <span className="text-custom-deep-blue bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
                 AI-Powered Search
               </span>
             </h1>

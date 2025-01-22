@@ -44,18 +44,18 @@ const FaqSection = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className=" rounded-lg overflow-hidden"
+              className=" overflow-hidden border border-b-1 border-b-black mx-3"
             >
               <button
-                className="w-full p-6 text-left bg-blue-600 hover:bg-gray-750 transition-colors duration-200"
+                className="w-full p-6 text-left  hover:bg-gray-750 transition-colors duration-200"
                 onClick={() => toggleAccordion(index)}
               >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold text-white">
+                <div className="flex bg-transperent justify-between items-center ">
+                  <h3 className="text-lg font-semibold text-black">
                     {faq.question}
                   </h3>
                   <ChevronDown 
-                    className={`w-5 h-5 text-white transition-transform duration-200 ${
+                    className={`w-5 h-5 text-black transition-transform duration-200 ${
                       activeIndex === index ? 'transform rotate-180' : ''
                     }`}
                   />
@@ -69,7 +69,7 @@ const FaqSection = () => {
                     : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="p-6 bg-blue-600 text-white">
+                <div className="p-6 bg-transparent text-black">
                   {faq.answer}
                 </div>
               </div>
